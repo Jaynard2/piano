@@ -1,0 +1,9 @@
+target_sources(
+    ${PROJECT_NAME}
+    PRIVATE
+    main.cpp
+    Display.cpp
+    Window.cpp
+    Character.cpp
+    EventDispatcher.cpp
+)

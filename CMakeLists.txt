@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.20)
+project(PianoPlayer)
+add_executable(${PROJECT_NAME})
+set_target_properties(${PROJECT_NAME} PROPERTIES CMAKE_CXX_STANDARD 20)
+target_include_directories(${PROJECT_NAME} PRIVATE include)
+add_subdirectory(src)
+add_subdirectory(lib)
+target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt X11)
